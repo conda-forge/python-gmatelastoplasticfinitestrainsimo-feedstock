@@ -1,6 +1,6 @@
 {% set name = "python-gmatelastoplasticfinitestrainsimo" %}
-{% set version = "0.0.4" %}
-{% set sha256 = "23c616eb93121d80f60edadbeda8a55fe21e860b1724b1eb554873459e03cb13" %}
+{% set version = "0.1.0" %}
+{% set sha256 = "5c9dc68192991e37943a3de62ae8008cef9d24c1fbc91a27bbf3d4ac98d502be" %}
 
 package:
   name: {{ name|lower }}
