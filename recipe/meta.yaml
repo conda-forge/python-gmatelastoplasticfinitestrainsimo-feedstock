@@ -1,6 +1,6 @@
 {% set name = "python-gmatelastoplasticfinitestrainsimo" %}
-{% set version = "0.1.0" %}
-{% set sha256 = "5c9dc68192991e37943a3de62ae8008cef9d24c1fbc91a27bbf3d4ac98d502be" %}
+{% set version = "0.2.0" %}
+{% set sha256 = "717a4f89c88038d2af187114fbd5aea58d72222caadc878293212f5ebb1b669a" %}
 
 package:
   name: {{ name|lower }}
@@ -11,9 +11,8 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 2
-  skip: True  # [win]
-  script: "{{ PYTHON }} -m pip install . -vv"
+  number: 0
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   build:
@@ -23,6 +22,7 @@ requirements:
     - setuptools
     - pip
     - pyxtensor
+    - gmattensor
   run:
     - python
 
@@ -35,8 +35,8 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: 'Finite strain elasto-plastic model (Python wrapper).'
-  description: 'Finite strain elasto-plastic model (Python wrapper).'
+  summary: Finite strain elasto-plastic model (Python wrapper).
+  description: Finite strain elasto-plastic model (Python wrapper).
   doc_url: https://github.com/tdegeus/GMatElastoPlasticFiniteStrainSimo
   dev_url: https://github.com/tdegeus/GMatElastoPlasticFiniteStrainSimo
 
